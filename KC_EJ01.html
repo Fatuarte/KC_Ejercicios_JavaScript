@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ01</title>
+
+<script>
+
+var radio=prompt("Introduce el radio del círculo");
+
+var area=Math.PI*Math.pow(radio, 2);
+
+/* Fer, como verás, he utilizado la expresión Math.pow(radio, 2) para sacar el cuadrado del radio... 
+¿Hay alguna otra manera más sencilla de expresar la potencia de un número? 
+*/
+
+document.write("Radio: " + radio +" cm");
+
+/* 
+Fer, he intentado hacer el salto de línea ("<br/>") dentro del anterior document.write, 
+pero algo debía estar haciendo mal, porque no me funcionaba. Así que lo he puesto en línea aparte.
+¿Me podrías decir, por favor, cómo hacerlo correctamente? Para ahorrar líneas de código más que nada...
+Muchas gracias.
+*/
+document.write("<br/>");
+
+document.write("\rEl área del círculo es " + area.toFixed(2) + " cm");
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>
