@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>KC_EJ01</title>
+<title>KC_EJ02</title>
 
 <script>
 
@@ -10,11 +10,31 @@ var num1=prompt("Introduce el primer número");
 
 var num2=prompt("Introduce el segundo número");
 
-document.write(num1 + num2);
+//var operaciones=["+","-","x","/","**","%"];
+
+document.write("Entradas: ", num1, " y ", num2,"<br/>");
 
 document.write("<br/>");
 
-document.write(num1);
+//document.write(num1, operaciones[0], num2);
+
+document.write("Salida:","<br/>","<br/>",num1, " + ", num2, " = ", Number(num1)+Number(num2),"<br/>");
+
+document.write(num1, " - ", num2, " = ", Number(num1)-Number(num2),"<br/>");
+
+document.write(num1, " * ", num2, " = ", Number(num1)*Number(num2),"<br/>");
+
+document.write(num1, " / ", num2, " = ", Number(num1)/Number(num2),"<br/>");
+
+document.write(num1, " ** ", num2, " = ", Number(num1)**Number(num2),"<br/>");
+
+document.write(num1, " % ", num2, " = ", Number(num1)%Number(num2),"<br/>");
+/*
+    Fer, aquí he utilizado la función Number() para convertir a número un string.
+    ... es decir, para que no me concatene num1 y num2, sino que me sume ambos números.
+    Pero, ¿existe alguna otra manera de hacerlo? ¿Lo estoy haciendo correctamente, o,
+    por el contrario, me estoy complicando la vida haciendo eso?
+*/
 
 </script>
 

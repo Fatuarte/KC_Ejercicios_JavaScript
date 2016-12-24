@@ -14,17 +14,12 @@ var area=Math.PI*Math.pow(radio, 2);
 ¿Hay alguna otra manera más sencilla de expresar la potencia de un número? 
 */
 
-document.write("Radio: " + radio +" cm");
+document.write("Radio: " + radio +" cm", "<br/>");
 
-/* 
-Fer, he intentado hacer el salto de línea ("<br/>") dentro del anterior document.write, 
-pero algo debía estar haciendo mal, porque no me funcionaba. Así que lo he puesto en línea aparte.
-¿Me podrías decir, por favor, cómo hacerlo correctamente? Para ahorrar líneas de código más que nada...
-Muchas gracias.
-*/
-document.write("<br/>");
+document.write("El área del círculo es " + area.toFixed(2) + " cm");
 
-document.write("\rEl área del círculo es " + area.toFixed(2) + " cm");
+// Otra pregunta, Fer: ¿Hay alguna otra manera de hacer un salto de línea que no sea "<br/>"?
+
 
 </script>
 

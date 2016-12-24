@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ05</title>
+
+<script>
+
+var salida;
+
+var Juan = new Object();
+
+Juan.mesNacimiento = prompt("Introduce el mes de nacimiento de Juan");
+Juan.anoNacimiento = prompt("Introduce el año de nacimiento de Juan");
+
+var Luis = new Object();
+Luis.mesNacimiento=prompt("Introduce el mes de nacimiento de Luis");
+Luis.anoNacimiento=prompt("Introduce el año de nacimiento de Luis");
+
+document.write("Entradas:","</br/>",
+        "mes ",Juan.mesNacimiento,"</br/>",
+        "año ",Juan.anoNacimiento,"</br/>",
+        "mes ",Luis.mesNacimiento,"</br/>",
+        "año  ",Luis.anoNacimiento);
+
+if (Juan.mesNacimiento == Luis.mesNacimiento && Juan.anoNacimiento == Luis.anoNacimiento){
+    salida=true;
+    document.write("Salida: ", salida);
+}else {
+    salida=false;
+    document.write("Salida: ", salida);
+};
+
+/* Fer, de momento he obviado el control de errores en cuanto a introducir un mes o un año fuera de rango.
+    Por ejemplo, si se introdujera un mes "15" o un año "47895".
+
+    Y, como siempre, seguro que hay una manera mucho más sencilla de hacer este programa...
+ */
+
+
+
+document.write("Entradas: ", nota1, ", ", nota2, " y ", nota3);
+
+document.write("<br/>");
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

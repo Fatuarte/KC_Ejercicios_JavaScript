@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ06</title>
+
+<script>
+
+var num1 = prompt("Introduce el primer número");
+var num2 = prompt("Introduce el segundo número");
+var salida;
+
+document.write("Entradas: ", num1 , " y " , num2, "<br/>");
+
+if (num1 < num2) {
+    salida = false;
+    document.write("Salida:", "<br/>", num1 + " < ", num2, " = ", salida);
+}else {
+    salida = true;
+    document.write("Salida:", "<br/>", num1 + " < ", num2, " = ", salida);
+};
+
+if (num1 > num2) {
+    salida = true;
+    document.write("<br/>", num1, " > ", num2, " = ", salida);
+}else {
+    salida = false;
+    document.write("<br/>", num1, " > ", num2, " = ", salida);
+};
+
+if (num1 == num2) {
+    salida = true;
+    document.write("<br/>" + num1 + " y " + num2 + " son iguales" + " = " + salida);
+}else {
+    salida = false;
+    document.write("<br/>" + num1 + " y " + num2 + " son iguales" + " = " + salida);
+};
+
+if (num1 !== num2) {
+    salida = true;
+    document.write("<br/>" + num1 + " y " + num2 + " son distintos" + " = " + salida);
+}else {
+    salida = false;
+    document.write("<br/>" + num1 + " y " + num2 + " son distintos" + " = " + salida);
+};
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>
