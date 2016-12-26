@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ13</title>
+
+<script>
+
+var valores = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+var rango1 = prompt("Introduce el primer rango entre 1 y 20");
+var rango2 = prompt("Introduce el segundo rango entre 1 y 20");
+
+if ((rango1 >=1 && rango1 <=20) && (rango2 >=1 && rango2 <=20)) {
+    document.write("Valores: " + valores.toString() + "<br/>");
+    document.write("Entradas: " + rango1 + " y " + rango2 + "<br/>");
+    document.write("Salida: " + valores.slice(rango1, rango2));
+
+}else {
+    document.write("Valores: " + valores.toString() + "<br/>");
+    document.write("Entradas: " + rango1 + " y " + rango2 + "<br/>");
+    document.write("Salida: El rango debe ser de 1 a 20");
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

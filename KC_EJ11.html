@@ -1,0 +1,115 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ11</title>
+
+<script>
+
+var num1 = prompt("Introduce el primer número");
+var num2 = prompt("Introduce el segundo número");
+var num3 = prompt("Introduce el tercer número");
+var mayor;
+var menor;
+
+
+if (num1 > num2 && num1 > num3){
+    // num1 es el mayor
+    mayor = num1;
+    menor = 0;
+    if (num2 > num3) {
+        menor = num3
+    }else {
+        menor = num2;
+    }
+
+}else if (num2 > num3 && num2 > num1) {
+    // num2 es el mayor
+    mayor = num2;
+    menor = 0;
+    if (num3 > num1) {
+        menor = num1;
+    }else {
+        menor = num3;
+    }
+
+}else if (num3 > num2 && num3 > num1) {
+    // num3 es el mayor
+    mayor = num3;
+    menor = 0;
+    if (num2 > num1) {
+        menor = num1;
+    }else {
+        menor = num2;
+    }
+
+}
+
+document.write("Entradas: " + num1 + ", " + num2 + " y " + num3 + "<br/>");
+document.write("Salida: El mayor es " + mayor + ", el menor es " + menor);
+
+
+/*
+if (num1 > num2) {  // Comparamos el primer y el segundo número
+
+    mayor = num1;
+    menor = num2;
+
+    if (num1 > num3) {  // Comparamos el primer y el tercer número
+
+        if (num2 > num3) {  // Comparamos el segundo y el tercer número
+
+            mayor = num1;
+            menor = num3;
+
+        }else if (num2 < num3) {
+
+            mayor = num1;
+            menor = num2;
+
+        }
+
+    }else if (num1 < num3) {
+
+        mayor = num3;
+
+    }
+
+}else if (num1 < num2) {
+
+    mayor = num2;
+    menor = num1;
+
+    if (num2 > num3) {  // Comparamos el segundo y el tercer número
+
+        if (num1 > num3) {
+
+            menor = num3;
+
+        }else if (num1 < num3) {
+
+            menor = num1;
+
+        }
+
+    }else if (num2 < num3) {
+
+        mayor = num3;
+    }
+
+    document.write("Entradas: " + num1 + ", " + num2 + " y " + num3 + "<br/>");
+    document.write("Salida: El mayor es " + mayor + ", el menor es " + menor);
+
+}
+
+*/
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

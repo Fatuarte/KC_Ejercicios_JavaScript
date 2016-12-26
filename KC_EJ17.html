@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ17</title>
+
+<script>
+
+var nombresMail = [
+        ["Pandora", "pandora.peña@gmail.com"],
+        ["Interruptus", "interruptus@hotmail.es"],
+        ["Perdonavidas Martínez", "perdonavidas.martinez@yahoo.es"],
+        ["Ignatius", "ignatius@necios.es"],
+        ["Juanito Bravante", "juanito.brava@gmail.com"],
+        ["Tez Willow", "willow@yahoo.com"],
+        ["Benjamín Trelles", "benjatrelles@gmail.com"]
+];
+
+/*
+Hola, Fer. Ya sé que no es necesario, pero quería mostrar, antes de nada, la lista de nombres por pantalla.
+Así la ve el usuario y elige un nombre de la lista.
+Lo he intentado hacer con un bucle "for" leyendo del array. Funciona... pero a destiempo.
+Es decir, me muestra la lista después de pedirme que introduzca un nombre.
+¿Cómo podría hacer para que me mostrara la lista antes de preguntarme el nombre? Le estoy dando vueltas y me estoy volviendo primate...
+Muchas gracias.
+*/
+
+for (i=0; i<nombresMail.length; i++){
+    document.write((nombresMail[i][0]) + "<br/>");
+}
+
+var entradaNombre = prompt("Introduce el nombre de una persona de la lista y te mostraré su email");
+
+/*
+Otra cosilla, Fer... El "if" de más abajo no me funciona como yo quisiera.
+Quiero que me muestre el segundo elemento ([1]) del array en función del nombre que introduzco.
+Es decir, que si escribo "Interruptus", quiero que me muestre el segundo campo, el del email, "interruptus@... etc".
+Pero no me funciona, tengo que haber escrito alguna chorradaca, porque "no tira ni patrás"...
+*/
+
+if ((nombresMail[entradaNombre][0])==0) {
+    document.write("Salida: " + (nombresMail[entradaNombre][1]));
+}else {
+    document.write("El nombre escrito no está en lista");
+}
+
+/*if (typeof (nombresMail[entradaNombre][0]) === "undefined"){
+    document.write("Salida: " + (nombresMail[entradaNombre][1]));
+}else {
+    document.write("El nombre escrito no está en la lista");
+}
+*/
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ10</title>
+
+<script>
+
+var num=prompt("Introduce un número del 1 al 7");
+var movies=["Episode I   The Phantom Menace",
+            "Episode II   Attack of the Clones",
+            "Episode III   Revenge of the Sith",
+            "Episode IV   A New Hope",
+            "Episode V   The Empire Strikes Back",
+            "Episode VI   Return of the Jedi",
+            "Episode VII   The Force Awakens"];
+
+if (num >= 1 && num <= 7) {
+
+        num--;
+        document.write("Entrada: " + (movies[num].slice(8,11)) + "<br/>" + "Salida: " + movies[num]);
+
+}else {
+
+    document.write("¡Error! Valor fuera de rango");
+
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ09</title>
+
+<script>
+
+var cantidad=prompt("Introduzca una cantidad");
+var euro_dolar=prompt("¿Desea convertirlo de euros a dólares? Yes/No");
+var dolar_euro;
+
+if(euro_dolar=="Yes") {
+    document.write("Entradas: " + "<br/>" + "-> Cantidad: " + cantidad + "<br/>" + "-> Opción Euros a USD" + "<br/>");
+    document.write("Salida: " + (cantidad * 1.06).toFixed(2) + " USD");
+
+}else if(euro_dolar=="No") {
+    dolar_euro = prompt("¿Desea convertilo de dólares a euros? Yes/No");
+    if (dolar_euro == "Yes") {
+        document.write("Entradas: " + "<br/>" + "-> Cantidad: " + cantidad + "<br/>" + "-> Opción USD a Euros" + "<br/>");
+        document.write("Salida: " + (cantidad / 1.06).toFixed(2) + " Euros");
+    } else if (dolar_euro == "No") {
+        document.write("¡Respuesta no válida!");
+    }
+
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>
