@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ19</title>
+
+<script>
+
+var numeros = [];
+var numpar = [];
+
+document.write("Entrada: ");
+
+for (i=0;i<=9;i++){
+    numeros.push(prompt("Introduce el número " + (i+1)));
+    document.write(numeros[i] + ", ");
+    if(numeros[i] % 2 == 0){
+        numpar.push(numeros[i]);
+    }
+}
+
+document.write("<br/>" + "<br/>" + "Salida: Son pares " + numpar.toString());
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>
