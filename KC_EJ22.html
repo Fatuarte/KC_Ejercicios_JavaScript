@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ22</title>
+
+<script>
+
+var nombre;
+var edad;
+var arraynombres = new Array (10);  // ¿Esta es una manera correcta de hacerlo, Fer? ¿Otra manera mejor?
+
+
+for (i=0;i<10;i++){
+    nombre = prompt("Introduce nombre");
+    edad = prompt("Introduce edad");
+    arraynombres.push(nombre,edad);
+    if (edad >= 18) {
+        document.write(nombre.toUpperCase() + " (" + edad + ") " + " tiene derecho al voto" + "<br/>");
+    }else {
+        document.write(nombre.toUpperCase() + " (" + edad + ") " + " no tiene edad para votar" + "<br/>");
+    }
+}
+
+document.write("<br/>" + "Entradas: " + arraynombres); // Uhmmm... aquí me devuelve una salida rara...
+
+/*
+Este programa me ha vuelto un poco mico. No tiene exactamente la salida que pide el enunciado,
+pero ya lo reformaré, Fer.
+*/
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

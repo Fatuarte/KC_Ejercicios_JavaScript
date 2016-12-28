@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ23</title>
+
+<script>
+
+var arrayEntrada = new Array(4);  // Creo que esto que hago al definir un array bidimensional es un poco chapuza...
+var index=0;
+var media = 0;
+
+while (arrayEntrada.toString() !== "terminar"){
+
+    arrayEntrada.push(prompt("Introduce un nombre y 3 calificaciones separados por una coma ",""));
+    media = arrayEntrada.slice(1)/3;
+    document.write(arrayEntrada[index] + " " + media);
+    index++;
+
+}
+
+document.write("Entradas: " + "<br/>");
+
+for (i=0;i<arrayEntrada.length;i++){
+    document.write(arrayEntrada[i] + "<br/>");
+}
+
+
+
+// document.write("Salida: " + "<br/>" + " - Nombre: " + person1Array[0] + "<br/>" + " - Calificación: " + person1Array[1] + "<br/>");
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>
