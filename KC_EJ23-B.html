@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ23-B</title>
+
+<script>
+
+
+var arrayNotas=new Array();   // Declaración del array.
+var j=0;
+var i=0;
+var nombre;
+var flag_salir=0;  // Flag para determinar si termina el bucle.
+var media=0;
+  
+do{
+        for(i=0;flag_salir!==1;i++) 
+        {
+            j=0; // Cada vez que entre en este "for"" inicializamos j para el document.write.
+            arrayNotas[i]=new Array(4);
+            nombre=prompt("Intro nombre");  // Solicitamos al usuario el nombre.
+            if(nombre === "terminar"){
+                flag_salir=1;  // Si el nombre es terminar, ponemos el flag a 1
+
+            }else{  // Si no es terminar, procedemos con el resto del programa
+
+                arrayNotas[i][j]=nombre;  // Almacenamos el nombre en el array. 
+                                          // Pedimos el nombre por separado para que no se repita en cada iteración.
+                document.write(arrayNotas[i][j] + "<br/>")  // Imprimimos nombre (por comprobación) --> PULIR
+
+                        for(j=1;j<4;j++) //Entramos en el bucle para poner las notas
+                        {
+                            arrayNotas[i][j]=prompt("Intro nota " + j);  // introducimos 3 notas.
+                            document.write(arrayNotas[i][j] + "<br/>");  // Imprimimos las notas.
+                        }
+  
+            }
+                
+        }
+    
+}while(flag_salir==0);
+
+// Ahora un bucle para leer el array y mostrar los valores
+
+for(i=0;i<arrayNotas.length-1;i++)  // .lenth-1 para que no saque terminar zombie (undefined --> probar a quitarlo) como el último valor del array
+{
+    media=0;
+    j=0;
+    document.write("Nombre " + arrayNotas[i][j] + "<br/>");
+    for(j=1;j<4;j++)
+    {
+        document.write("Nota " + j + "= " + arrayNotas[i][j] + "<br/>");
+        media=media + parseInt(arrayNotas[i][j],10);  // ponemos el parseInt() para convertir el string del array a numérico
+    }
+    document.write("Media: " + media/3 + "<br/>");
+}
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

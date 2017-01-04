@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KC_EJ23-A</title>
+
+<script>
+
+
+var arrayNotas=new Array();   // Declaración del array.
+var j=0;
+var i=0;
+var nombre;
+  
+        for(i=0;i<4;i++)
+        {
+            j=0; // Cada vez que entre en este for inicializamos j para el document.write.
+            arrayNotas[i]=new Array(4);
+            nombre=prompt("Intro nombre");  // Solicitamos al usuario el nombre.
+            arrayNotas[i][j]=nombre;  // Almacenamos el nombre en el array.
+            document.write(arrayNotas[i][j] + "<br/>")  // Imprimimos nombre.
+
+            if(nombre === "terminar"){   // Si nomnbre es igual a terminar, nos salimos del programa.
+                
+                for(i=0;i<4;i++)
+                {
+                j=0;
+                document.write("Nombre: " + arrayNotas[i][j] + "<br/>")       
+                    for(j=1;j<4;j++)
+                    {
+                        document.write("Nota " + j + "= " + arrayNotas[i][j] + "<br/>");
+                    }
+                }
+                arrayNotas.pop();
+                exit();
+
+            }else
+            {
+                for(j=1;j<4;j++)
+                {
+                    arrayNotas[i][j]=prompt("Intro nota " + j);  // introducimos 3 notas.
+                    document.write(arrayNotas[i][j] + "<br/>");  // Imprimimos las notas.
+                }
+            };
+            
+        };
+        document.write("Se termina el programa");
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+</body>
+</html>

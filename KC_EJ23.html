@@ -6,6 +6,49 @@
 
 <script>
 
+
+var arregloNombres=new Array(3);
+var media=0;
+
+while (prompt ("Intro nombre" + arregloNombres.push()) !== "terminar"){
+    for (i=0;i<arregloNombres.length();i++){
+        arregloNombres.push(prompt("Introduce nombre"));
+        for (j=0;j<3;j++){
+            arregloNombres.push(arregloNombres[i][j]=prompt("intro num1,num2,num3"));
+        }
+    }
+}
+
+for (k=0;k<arregloNombres.length();k++){
+    for (h=0;h<3;h++){
+        media=media + arregloNombres[k][h]
+    }
+}
+media=arregloNombres
+/*
+var arrayEntrada = new Array(3);
+var media=0;
+
+while (prompt("Intro nombre,nota1,nota2,nota3: " + arrayEntrada.toString()) !== "terminar"){
+    for (i=0;i<arrayEntrada.length;i++){
+        arrayEntrada[i]=input[i];
+        for (j=0;j<3;j++){
+            media = media + j.parseInt();
+            arrayEntrada[i][j];
+        }
+    }
+}
+
+for (i=0;i<arrayEntrada.length;i++){
+    for (j=0;j<3;j++){
+        media = media + j.parseInt();
+        document.write(arrayEntrada[i][j] + media + "<br/>");
+    }
+}
+*/
+
+
+/*
 var arrayEntrada = new Array(4);  // Creo que esto que hago al definir un array bidimensional es un poco chapuza...
 var index=0;
 var media = 0;
@@ -25,7 +68,7 @@ for (i=0;i<arrayEntrada.length;i++){
     document.write(arrayEntrada[i] + "<br/>");
 }
 
-
+*/
 
 // document.write("Salida: " + "<br/>" + " - Nombre: " + person1Array[0] + "<br/>" + " - Calificación: " + person1Array[1] + "<br/>");
 
